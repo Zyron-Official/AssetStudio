@@ -17,41 +17,15 @@
         app:layout_constraintTop_toTopOf="parent"
         style="@style/Widget.Material3.Toolbar.Surface" />
     
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/about_section"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/fileEncoderLaunch"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="?attr/colorSurface"
-        app:cardCornerRadius="8dp"
-        app:strokeWidth="0dp"
-        android:layout_margin="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
-
-        <include
-            android:id="@+id/aboutHeader"
-            layout="@layout/about_header" />
-
-    </com.google.android.material.card.MaterialCardView>
-    
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/about"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="?attr/colorSurface"
-        app:cardCornerRadius="8dp"
-        app:strokeWidth="0dp"
-        android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/about_section">
-
-        <include
-            android:id="@id/aboutHeader"
-            layout="@layout/about_header" />
-
-    </com.google.android.material.card.MaterialCardView>    
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Launch Encoder" />
 
     <!-- Floating Action Button -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -60,10 +34,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_plus"
         android:tooltipText="Create an Asset"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_margin="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

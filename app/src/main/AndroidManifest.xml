@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest 
     xmlns:android="http://schemas.android.com/apk/res/android">
     
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     
     <application 
         android:allowBackup="true" 
@@ -27,44 +27,42 @@
         
         <activity
             android:name="com.zyron.assetstudio.activities.AboutActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
         </activity>
         
         <activity
             android:name="com.zyron.assetstudio.activities.ShapeShifterActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
         </activity>
         
         <activity
             android:name="com.zyron.assetstudio.activities.PreferencesActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
         </activity>
         
         <activity
             android:name="com.zyron.assetstudio.activities.XMLDesignerActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
+        </activity>
+        
+        <activity
+            android:name="com.zyron.assetstudio.activities.FileEncoderActivity"
+            android:exported="true">
         </activity>
         
         <activity
             android:name="com.zyron.assetstudio.activities.FaqActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
         </activity>
         
         <activity
             android:name="com.zyron.assetstudio.activities.AssetActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
         </activity>
         
         <activity
             android:name="com.zyron.assetstudio.activities.IconLauncherActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
         </activity>
         
     </application>

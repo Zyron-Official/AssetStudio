@@ -5,12 +5,12 @@
     <color name="md_theme_onPrimaryContainer">#1A1A1A</color>
     <color name="md_theme_secondary">#FAFAFA</color>
     <color name="md_theme_onSecondary">#1A1A1A</color>
-    <color name="md_theme_secondaryContainer">#005227</color>
-    <color name="md_theme_onSecondaryContainer">#5AFF9D</color>
+    <color name="md_theme_secondaryContainer">#004D1E</color>
+    <color name="md_theme_onSecondaryContainer">#5AFF9B</color>
     <color name="md_theme_tertiary">#4182F5</color>
     <color name="md_theme_onTertiary">#FAFAFA</color>
-    <color name="md_theme_tertiaryContainer">#4182F5</color>
-    <color name="md_theme_onTertiaryContainer">#FAFAFA</color>
+    <color name="md_theme_tertiaryContainer">#A0C3FA</color>
+    <color name="md_theme_onTertiaryContainer">#1A1A1A</color>
     <color name="md_theme_error">#FFB4AB</color>
     <color name="md_theme_onError">#690005</color>
     <color name="md_theme_errorContainer">#93000A</color>
@@ -34,7 +34,7 @@
     <color name="colorDarkStatusBar">#1A1A1A</color>
     <color name="colorDarkNavigationBar">#1A1A1A</color>
     <color name="colorDarkPopupMenu">#262626</color>
-    <color name="colorDarkAlertDialog">#191919</color>
+    <color name="colorDarkAlertDialog">#262626</color>
     <color name="colorDarkBottomSheet">#191919</color>
     <color name="colorDarkNavigationDrawer">#191919</color>
     <color name="colorDarkNavigationRail">#262626</color>

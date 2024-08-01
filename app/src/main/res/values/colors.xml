@@ -9,8 +9,8 @@
     <color name="md_theme_onSecondaryContainer">#001E0A</color>
     <color name="md_theme_tertiary">#A0C3FA</color>
     <color name="md_theme_onTertiary">#1A1A1A</color>
-    <color name="md_theme_tertiaryContainer">#A0C3FA</color>
-    <color name="md_theme_onTertiaryContainer">#1A1A1A</color>
+    <color name="md_theme_tertiaryContainer">#4284F5</color>
+    <color name="md_theme_onTertiaryContainer">#FAFAFA</color>
     <color name="md_theme_error">#BA1A1A</color>
     <color name="md_theme_onError">#FFFFFF</color>
     <color name="md_theme_errorContainer">#FFDAD6</color>
@@ -34,7 +34,7 @@
     <color name="colorStatusBar">#FFFFFF</color>
     <color name="colorNavigationBar">#FFFFFF</color>
     <color name="colorPopupMenu">#E6E6E6</color>
-    <color name="colorAlertDialog">#FEFEFE</color>
+    <color name="colorAlertDialog">#E6E6E6</color>
     <color name="colorBottomSheet">#FEFEFE</color>
     <color name="colorNavigationDrawer">#FEFEFE</color>
     <color name="colorNavigationRail">#E6E6E6</color>

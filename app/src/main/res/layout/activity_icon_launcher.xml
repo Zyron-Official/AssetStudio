@@ -49,10 +49,9 @@
         style="?attr/materialCardViewFilledStyle">
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon_preview"
             android:layout_height="100dp"
             android:layout_width="100dp"
-            android:id="@+id/icon_preview"
-            app:srcCompat="@drawable/ic_architecture"
             android:layout_gravity="center_vertical|center_horizontal" />
 
     </com.google.android.material.card.MaterialCardView>

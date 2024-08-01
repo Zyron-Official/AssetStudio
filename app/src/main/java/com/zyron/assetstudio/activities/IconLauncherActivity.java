@@ -3,9 +3,12 @@ package com.zyron.assetstudio.activities;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageButton;
+import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.AsyncTask;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.button.MaterialButtonToggleGroup;
@@ -27,6 +30,7 @@ public class IconLauncherActivity extends AppCompatActivity {
   private ActivityIconLauncherBinding binding;
   private FragmentManager fragmentManager;
   private Slider iconPadding;
+  private Handler handler = new Handler();
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,7 @@ public class IconLauncherActivity extends AppCompatActivity {
     binding.toolbar.setNavigationOnClickListener((v) -> onBackPressed());
     fragmentManager = getSupportFragmentManager();
     MaterialButtonToggleGroup toggleGroup = findViewById(R.id.toggleButton);
+    loadHeavyData();
 
     toggleGroup.check(R.id.clipartIcon);
     Fragment fragment = new ClipartIconFragment();
@@ -72,5 +77,25 @@ public class IconLauncherActivity extends AppCompatActivity {
         });
         
     }
+    
+    private void loadHeavyData() {
+    // Simulate heavy work in a background thread
+    handler.postDelayed(() -> {
+        try {
+            // Simulate heavy processing
+            Thread.sleep(0000); // Replace with actual heavy work simulation
+
+            // Ensure UI updates are only performed if activity is not finishing or destroyed
+            runOnUiThread(() -> {
+                if (!isFinishing() && !isDestroyed()) {
+                    // Update UI components here
+                }
+            });
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }, 0); // Delay of 0 ensures it runs immediately on the next message loop iteration
+}
 
 }

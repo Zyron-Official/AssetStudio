@@ -42,7 +42,7 @@
             android:id="@+id/navigation_updates"
             android:title="For Beta updates"
             android:checkable="false"
-            android:icon="@drawable/ic_github" />
+            android:icon="@drawable/ic_notification" />
         <item
             android:id="@+id/navigation_share"
             android:title="Share with Others"
