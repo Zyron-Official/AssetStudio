@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Asset Studio</title>
+        <!-- Google Fonts Filled -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Google Fonts Outlined -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <!-- Google Fonts Rounded -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <!-- Google Fonts Sharp -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <!-- Google Fonts Two Tone -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Font Awesome v6.7.2 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+        <!-- MDUI v2.-->
+        <link href="https://unpkg.com/mdui@2/mdui.css" rel="stylesheet">
+        <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <mdui-top-app-bar id="toolbar" scroll-behavior="shrink">
+                    <a href="/"><picture><i id="asset-studio-logo" class="fa-brands fa-android" alt="Asset Studio"></i></picture></a>
+                    <span id="asset-studio-title">Asset Studio</span>
+                    <div style="flex-grow: 1"></div>
+                    <mdui-button-icon id="mdui-menu"; icon="menu"></mdui-button-icon>
+                </mdui-top-app-bar>
+            </header>
+            <main id="main">
+                <nav id="drawer" class="closed">
+                    <div class="logo_items flex">
+                        <span class="nav_image"><img src="icons/instagram.svg" alt="logo_img" /></span>
+                        <span class="logo_name">Asset Studio</span>
+                    </div>
+                    <!-- Navigation Header with Icon -->
+                    <div class="menu_container">
+                        <div class="menu_items">
+                            <ul class="menu_item">
+                                <div class="menu_title flex">
+                                    <span class="title">Essentials</span>
+                                    <span class="line"></span>
+                                </div>
+                                <li class="item"><a href="/" class="link flex"><span class="material-symbols-rounded">home</span><span class="menu-title">Home</span></a></li>
+                                <li class="item"><a href="/" class="link flex"><span class="material-symbols-rounded">forum</span><span class="menu-title">FAQ's</span></a></li>
+                                <li class="item"><a href="/" class="link flex"><span class="material-symbols-rounded">contract</span><span class="menu-title">License</span></a></li>
+                                <li class="item"><a href="/" class="link flex"><span class="material-symbols-rounded">download</span><span class="menu-title">Downloads</span></a></li>
+                                <li class="item"><a href="/" class="link flex"><span class="material-symbols-rounded">apk_install</span><span class="menu-title">Installation</span></a></li>
+                            </ul>
+                            <ul class="menu_item">
+                                <div class="menu_title flex">
+                                    <span class="title">Documentation</span>
+                                    <span class="line"></span>
+                                </div>
+                                <li class="item"><a href="#" class="link flex"><span class="material-symbols-rounded">verified_user</span><span class="menu-title">Privacy Policy</span></a></li>
+                                <li class="item"><a href="#" class="link flex"><span class="material-symbols-rounded">policy</span></i><span class="menu-title">Terms & Conditions</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <section class="content" style="overflow: auto;">
+                    <div id="header-section">
+                        <h1>Asset Studio</h1>
+                        <p>Explore powerful, feature-rich Asset Studio app designed for devs, used in Syntax Studio.</p>
+                        <mdui-button id="download-button" class="button" onclick="window.open('https://github.com/Zyron-Official/Asset-Studio/releases')">Download Asset Studio</mdui-button>
+                    </div>
+                    <div id="imgmock" style="text-align: center;">
+                        <img src="screen1.png" height="460px" width="250px" style="object-fit: scale-down; margin: 12px; padding: 30px;">
+                    </div>
+                    <h1 style="text-align: center;">Features</h1>
+                    <hr width="120px" style="margin-bottom: 20px;">
+                    <div style="text-align: center;">
+                        <img src="oss.png" width="102px" height="102px">
+                        <h1>Open Source</h1>
+                        <p>This app is completely Open Source. You can visit the source code on the website.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="gdx.png" width="102px" height="102px">
+                        <h1>LibGDX</h1>
+                        <p>This app has LibGDX Java integration, so you can create LibGDX games.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="speed.png" width="102px" height="102px">
+                        <h1>Performance</h1>
+                        <p>The app is smooth and speedy on any Android device, enhancing the user experience.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="power.png" width="102px" height="102px">
+                        <h1>Powerful</h1>
+                        <p>The app includes a great 3D model editor based on Jetpack Compose and uses the Sora Editor.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="shot1.png" width="320.5px" height="350.5px">
+                    </div>
+                    <div>
+                        <h1 style="text-align: center;">What's Special</h1>
+                        <hr width="120px" style="margin-bottom: 20px;">
+                    </div>
+                    <div id="features">
+                        <mdui-card class="section" clickable variant="outlined">
+                            <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px;">Heading</h2>
+                        </mdui-card>
+                        <mdui-card class="section" clickable variant="outlined">
+                            <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px;">Heading</h2>
+                        </mdui-card>
+                        <mdui-card class="section" clickable variant="outlined">
+                            <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px">Heading</h2>
+                        </mdui-card>
+                    </div>
+                </section>
+            </main>
+            <footer id="footer">
+                <div id="footer-top">
+                    <div class="footer-row">
+                        <div class="footer-col">
+                            <h5 class="title">Resources</h5>
+                            <ul class="links">
+                                <li><a href="http://github.com">Product Support</a></li>
+                                <li><a href="http://github.com">Licensing FAQ</a></li>
+                                <li><a href="http://github.com">Documentation</a></li>
+                                <li><a href="http://github.com">Earley Access</a></li>
+                                <li><a href="http://github.com">Newsletters</a></li>
+                                <li><a href="http://github.com">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h5 class="title">Company</h5>
+                            <ul class="links">
+                                <li><a href="http://github.com">About</a></li>
+                                <li><a href="http://github.com">Contacts</a></li>
+                                <li><a href="http://github.com">Our Commitment</a></li>
+                                <li><a href="http://github.com">Brand Assets</a></li>
+                                <li><a href="http://github.com">Open Source Partnerships</a></li>
+                                <li><a href="http://github.com">Partners and Resellers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-row">
+                        <div class="footer-col">
+                            <h5 class="title">Resources</h5>
+                            <ul class="links">
+                                <li><a href="http://github.com">Product Support</a></li>
+                                <li><a href="http://github.com">Licensing FAQ</a></li>
+                                <li><a href="http://github.com">Documentation</a></li>
+                                <li><a href="http://github.com">Earley Access</a></li>
+                                <li><a href="http://github.com">Newsletters</a></li>
+                                <li><a href="http://github.com">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h5 class="title">Company</h5>
+                            <ul class="links">
+                                <li><a href="http://github.com">About</a></li>
+                                <li><a href="http://github.com">Contacts</a></li>
+                                <li><a href="http://github.com">Our Commitment</a></li>
+                                <li><a href="http://github.com">Brand Assets</a></li>
+                                <li><a href="http://github.com">Open Source Partnerships</a></li>
+                                <li><a href="http://github.com">Partners and Resellers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr id="footer-hr">
+                <div id="footer-middle">
+                    <picture id="footer-icons" type="image/svg">
+                        <a href="https://www.facebook.com/profile.php?id=61570941197717&mibextid=ZbWKwL"><i id="facebook" class="fa-brands fa-facebook-square" alt="Facebook"></i></a>
+                        <a href="https://github.com/Zyron-Official/Asset-Studio"><i id="instagram" class="fa-brands fa-square-instagram" alt="Instagram"></i></a>
+                        <a href="https://x.com/AssetStudioX?t=wvfV5ILm7KBQIylxSGDneA&s=09"><i id="x-twitter" class="fa-brands fa-square-x-twitter" alt="X-Twitter"></i></a>
+                        <a href="https://t.me/AssetStudioOfficial"><i id="telegram" class="fa-brands fa-telegram" alt="Telegram"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VajB6bGC6ZvkEEnE7d1o"><i id="whatsapp" class="fa-brands fa-square-whatsapp" alt="WhatsApp"></i></a>  
+                        <a href="https://github.com/Zyron-Official/Asset-Studio"><i id="linkedin" class="fa-brands fa-linkedin" alt="LinkedIn"></i></a>                           
+                        <a href="https://github.com/Zyron-Official/Asset-Studio"><i id="github" class="fa-brands fa-square-github" alt="GitHub"></i></a>
+                    </picture>
+                </div>
+                <div id="footer-bottom">
+                    <p id="anchor-links">
+                        <a href="https://github.com/Zyron-Official/Asset-Studio">Privacy & Security</a> |
+                        <a href="https://github.com/Zyron-Official/Asset-Studio">Privacy Notice</a> |
+                        <a href="https://github.com/Zyron-Official/Asset-Studio">Terms of Use</a> |
+                        <a href="https://github.com/Zyron-Official/Asset-Studio">Trademarks</a> |               
+                        <a href="https://github.com/Zyron-Official/Asset-Studio">Legal</a>
+                    </p>                    
+                    <p id="copyright">Copyright © 2023-2024 Asset Studio, All rights reserved.</p>
+                    <p id="hyper-links">
+                        <a href="https://github.com/Zyron-Official/Asset-Studio">GitHub</a> |
+                        <a href="https://github.com/Zyron-Official/Asset-Studio/blob/main/app/docs/Documentations.md">Official Docs</a> |
+                        <a href="https://github.com/Zyron-Official/Asset-Studio/blob/main/LICENSE">License</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
